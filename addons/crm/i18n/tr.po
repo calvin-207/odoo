@@ -24,13 +24,15 @@
 # Ediz Duman <neps1192@gmail.com>, 2023
 # Halil, 2023
 # "Dylan Kiss (dyki)" <dyki@odoo.com>, 2025.
+# Weblate <noreply-mt-weblate@weblate.org>, 2025.
+# DeepL <noreply-mt-deepl@weblate.org>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0beta\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-11 13:55+0000\n"
-"PO-Revision-Date: 2025-09-16 02:34+0000\n"
-"Last-Translator: \"Dylan Kiss (dyki)\" <dyki@odoo.com>\n"
+"POT-Creation-Date: 2025-10-08 18:37+0000\n"
+"PO-Revision-Date: 2025-11-12 14:56+0000\n"
+"Last-Translator: DeepL <noreply-mt-deepl@weblate.org>\n"
 "Language-Team: Turkish <https://translate.odoo.com/projects/odoo-19/crm/tr/>"
 "\n"
 "Language: tr\n"
@@ -97,14 +99,16 @@ msgstr "%s fırsat"
 #. module: crm
 #. odoo-python
 #: code:addons/crm/models/res_users.py:0
+#, fuzzy
 msgid "(Team Leader)"
-msgstr ""
+msgstr "(Ekip Lideri)"
 
 #. module: crm
 #. odoo-javascript
 #: code:addons/crm/static/src/views/crm_form/crm_pls_tooltip_button.xml:0
+#, fuzzy
 msgid "(sample data)"
-msgstr ""
+msgstr "(örnek veriler)"
 
 #. module: crm
 #. odoo-javascript
@@ -131,18 +135,21 @@ msgstr ""
 
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.quick_create_opportunity_form
+#, fuzzy
 msgid "<i class=\"fa fa-briefcase\" title=\"Opportunity Name\"/>"
-msgstr ""
+msgstr "<i class=\"fa fa-briefcase\" title=\"Opportunity Name\"/>"
 
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.quick_create_opportunity_form
+#, fuzzy
 msgid "<i class=\"fa fa-building\" title=\"Company\"/>"
-msgstr ""
+msgstr "<i class=\"fa fa-building\" title=\"Company\"/>"
 
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.quick_create_opportunity_form
+#, fuzzy
 msgid "<i class=\"fa fa-envelope\" title=\"Contact Email\"/>"
-msgstr ""
+msgstr "<i class=\"fa fa-envelope\" title=\"Contact Email\"/>"
 
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.sales_team_form_view_in_crm
@@ -151,23 +158,27 @@ msgstr "<i class=\"fa fa-info-circle me-2\" title=\"Assigned Lead Count\"/>"
 
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.quick_create_opportunity_form
+#, fuzzy
 msgid "<i class=\"fa fa-mobile fa-lg\" title=\"Contact Phone\"/>"
-msgstr ""
+msgstr "<i class=\"fa fa-mobile fa-lg\" title=\"Contact Phone\"/>"
 
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.quick_create_opportunity_form
+#, fuzzy
 msgid "<i class=\"fa fa-money\" title=\"Expected Revenue\"/>"
-msgstr ""
+msgstr "<i class=\"fa fa-money\" title=\"Expected Revenue\"/>"
 
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.quick_create_opportunity_form
+#, fuzzy
 msgid "<i class=\"fa fa-refresh\" title=\"Recurring Revenue\"/>"
-msgstr ""
+msgstr "<i class=\"fa fa-refresh\" title=\"Recurring Revenue\"/>"
 
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.quick_create_opportunity_form
+#, fuzzy
 msgid "<i class=\"fa fa-user\" title=\"Contact\"/>"
-msgstr ""
+msgstr "<i class=\"fa fa-user\" title=\"Contact\"/>"
 
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.res_config_settings_view_form
@@ -194,8 +205,8 @@ msgid ""
 "title=\"By saving this change, the customer email will also be updated.\" "
 "invisible=\"not partner_email_update\"/>"
 msgstr ""
-"<span class=\"fa fa-exclamation-triangle text-warning oe_edit_only\" title="
-"\"By saving this change, the customer email will also be updated.\" "
+"<span class=\"fa fa-exclamation-triangle text-warning oe_edit_only\" "
+"title=\"By saving this change, the customer email will also be updated.\" "
 "invisible=\"not partner_email_update\"/>"
 
 #. module: crm
@@ -205,9 +216,9 @@ msgid ""
 "title=\"By saving this change, the customer phone number will also be "
 "updated.\" invisible=\"not partner_phone_update\"/>"
 msgstr ""
-"<span class=\"fa fa-exclamation-triangle text-warning oe_edit_only\" title="
-"\"By saving this change, the customer phone number will also be updated.\" "
-"invisible=\"not partner_phone_update\"/>"
+"<span class=\"fa fa-exclamation-triangle text-warning oe_edit_only\" "
+"title=\"By saving this change, the customer phone number will also be "
+"updated.\" invisible=\"not partner_phone_update\"/>"
 
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.crm_lead_view_form
@@ -219,8 +230,8 @@ msgid ""
 msgstr ""
 "<span class=\"o_stat_text\" invisible=\"duplicate_lead_count &lt; 2\">Benzer "
 "Adaylar</span>\n"
-"                                    <span class=\"o_stat_text\" invisible="
-"\"duplicate_lead_count &gt; 1\">Benzer Aday</span>"
+"                                    <span class=\"o_stat_text\" "
+"invisible=\"duplicate_lead_count &gt; 1\">Benzer Aday</span>"
 
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.utm_campaign_view_form
@@ -230,8 +241,8 @@ msgid ""
 "invisible=\"use_leads\">Opportunities</span>"
 msgstr ""
 "<span class=\"o_stat_text\" invisible=\"not use_leads\">Adaylar</span>\n"
-"                        <span class=\"o_stat_text\" invisible=\"use_leads\""
-">Fırsatlar</span>"
+"                        <span class=\"o_stat_text\" "
+"invisible=\"use_leads\">Fırsatlar</span>"
 
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.crm_lost_reason_view_form
@@ -240,28 +251,37 @@ msgstr "<span class=\"o_stat_text\"> Adaylar</span>"
 
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.crm_lead_view_form
+#, fuzzy
 msgid ""
 "<span class=\"opacity-50 p-2 text-nowrap d-none d-sm-block\"> at </span>"
 msgstr ""
+"<span class=\"opacity-50 p-2 text-nowrap d-none d-sm-block\"> at </span>"
 
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.crm_lead_view_form
+#, fuzzy
 msgid ""
 "<span class=\"opacity-50 p-2\" groups=\"crm.group_use_recurring_revenues\"> "
 "+ </span>\n"
 "                                        <span class=\"opacity-50 p-2\" "
 "groups=\"!crm.group_use_recurring_revenues\"> at </span>"
 msgstr ""
+"<span class=\"opacity-50 p-2\" groups=\"crm.group_use_recurring_revenues\"> +"
+" </span>\n"
+"                                        <span class=\"opacity-50 p-2\" "
+"groups=\"!crm.group_use_recurring_revenues\"> adresinde </span>"
 
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.crm_lead_view_form
+#, fuzzy
 msgid "<span class=\"opacity-50 p-2\"> %</span>"
-msgstr ""
+msgstr "<span class=\"opacity-50 p-2\"> %</span>"
 
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.crm_team_member_view_form
+#, fuzzy
 msgid "<span> leads assigned the last 30 days out of a maximum of </span>"
-msgstr ""
+msgstr "<span> en fazla 30 gün içinde atanan potansiyel müşteriler </span>"
 
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.sales_team_form_view_in_crm
@@ -284,6 +304,7 @@ msgstr "<span>Müşteri Adayı/Fırsatı Birleştirdi</span>"
 
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.res_config_settings_view_form
+#, fuzzy
 msgid ""
 "<span>Periodically assign leads based on priorities and filters.</span><br/"
 ">\n"
@@ -294,6 +315,14 @@ msgid ""
 "                                    specified otherwise.\n"
 "                                </span>"
 msgstr ""
+"<span>Önceliklere ve filtrelere göre müşteri adaylarını periyodik olarak "
+"atayın.</span><br/>\n"
+"                               <span invisible="
+"\"not crm_use_auto_assignment\">\n"
+"                                    Aşağıdaki durumlar haricinde tüm satış "
+"ekipleri varsayılan olarak bu ayarı kullanacaktır\n"
+"                                    aksi belirtilmedikçe.\n"
+"                               </span>"
 
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.crm_lead_merge_summary
@@ -302,6 +331,7 @@ msgstr "<span>bunun içine.</span>"
 
 #. module: crm
 #: model:mail.template,body_html:crm.mail_template_demo_crm_lead
+#, fuzzy
 msgid ""
 "<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"padding-top: "
 "16px; background-color: #F1F1F1; font-family:Verdana, Arial,sans-serif; "
@@ -410,6 +440,122 @@ msgid ""
 "</table>\n"
 "        "
 msgstr ""
+"<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"padding-top: "
+"16px; background-color: #F1F1F1; font-family:Verdana, Arial,sans-serif; "
+"color: #454748; width: 100%; border-collapse:separate;\"><tr><td align=\""
+"center\">\n"
+"<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style="
+"\"padding: 24px; background-color: white; color: #454748; border-"
+"collapse:separate;\">\n"
+"<tbody>\n"
+"    <!-- HEADER -->\n"
+"   <tr>\n"
+"        <td align=\"center\" style=\"min-width: 590px;\">\n"
+"           <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width="
+"\"100%\" style=\"background-color: white; padding: 0; border-"
+"collapse:separate;\">\n"
+"                <tr><td valign=\"middle\">\n"
+"                    <span style=\"font-size: 10px;\">Potansiyel Müşteriniz/"
+"Fırsatınız</span><br/>\n"
+"                   <span style=\"font-size: 20px; font-weight: bold;"
+"\" t-out=\"object.name or ''\">Ürünlerinize olan ilgi</span>\n"
+"                </td><td valign=\"middle\" align=\"right\">\n"
+"                    <img t-attf-src="
+"\"/logo.png?company={{ object.company_id.id }}\" style="
+"\"padding: 0px; margin: 0px; height: 48px;\" t-att-alt="
+"\"object.company_id.name\"/>\n"
+"               </td></tr>\n"
+"               <tr><td colspan=\"2\" style=\"text-align:center;\">\n"
+"                   <hr width=\"100%\" style=\"background-"
+"color:rgb(204,204,204);border:medium none;clear:both;display:block;font-"
+"size:0px;min-height:1px;line-height:0; margin:4px 0px 32px 0px;\"/>\n"
+"                </td></tr>\n"
+"            </table>\n"
+"       </td>\n"
+"    </tr>\n"
+"   <!-- CONTENT -->\n"
+"    <tr>\n"
+"       <td style=\"min-width: 590px;\">\n"
+"            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width="
+"\"590\" style=\"min-width: 590px; background-color: white; padding: 0px 8px "
+"0px 8px; border-collapse:separate;\">\n"
+"               <tr>\n"
+"                    <td valign=\"top\" style=\"font-size: 13px;\">\n"
+"                       <div>\n"
+"                            Merhaba <t t-out="
+"\"object.partner_id and object.partner_id.name or ''\">Deco Bağımlısı</t>,<"
+"br/><br/>\n"
+"                            <t t-out=\"object.company_id.name or ''\"> My "
+"Company (San Francisco)</t> adresine hoş geldiniz.\n"
+"                            Sizinle tanışmak çok güzel! Artık aramıza "
+"katıldığınıza göre, <t t-out=\"object.company_id.name or ''\">My Company ("
+"San Francisco)</t> 'un neler sunabileceğini keşfedeceksiniz. Benim adım <t "
+"t-out=\"object.user_id.name or ''\">Marc Demo</t> ve Odoo'dan en iyi şekilde "
+"yararlanmanıza yardımcı olacağım. Yakında hızlı bir demo planlayabilir "
+"miyiz?<br/>\n"
+"                            İstediğiniz zaman ulaşmaktan çekinmeyin!<br/><br/"
+">\n"
+"                            En iyisi,<br/>\n"
+"                            <t t-if=\"object.user_id\">\n"
+"                               <b><t t-out=\"object.user_id.name or ''\""
+">Marc Demo</t></b>\n"
+"                               <br/>E-posta: <t t-out="
+"\"object.user_id.email or ''\">mark.brown23@example.com</t>\n"
+"                                <br/>Telefon: <t t-out="
+"\"object.user_id.phone or ''\">+1 650-123-4567</t>\n"
+"                            </t>\n"
+"                           <t t-else=\"\">\n"
+"                                <t t-out=\"object.company_id.name or ''\""
+">Şirketim (San Francisco)</t>\n"
+"                            </t>\n"
+"                       </div>\n"
+"                    </td>\n"
+"               </tr>\n"
+"            </table>\n"
+"       </td>\n"
+"    </tr>\n"
+"   <!-- FOOTER -->\n"
+"    <tr>\n"
+"       <td align=\"center\" style=\"min-width: 590px; padding: 0 8px 0 8px; "
+"font-size:11px;\">\n"
+"            <hr width=\"100%\" style=\"background-"
+"color:rgb(204,204,204);border:medium none;clear:both;display:block;font-"
+"size:0px;min-height:1px;line-height:0; margin: 16px 0px 4px 0px;\"/>\n"
+"           <b t-out=\"object.company_id.name or ''\">Şirketim (San "
+"Francisco)</b><br/>\n"
+"           <div style=\"color: #999999;\">\n"
+"                <t t-out=\"object.company_id.phone or ''\">+1 "
+"650-123-4567</t>\n"
+"                <t t-if=\"object.company_id.email\">\n"
+"                    | <a t-attf-href="
+"\"'mailto:%s' % {{ object.company_id.email }}\" style=\"text-decoration:none;"
+" color: #999999;\" t-out=\"object.company_id.email or ''"
+"\">% {{ object.company_id.email }}\" style=\"text-decoration:none; color: "
+"#999999;\" t-out=\"object.company_id.email or ''\">info@yourcompany.com</a>\n"
+"                </t>\n"
+"               <t t-if=\"object.company_id.website\">\n"
+"                    | <a t-attf-href="
+"\"'%s' % {{ object.company_id.website }}\" style=\"text-decoration:none; "
+"color: #999999;\" t-out=\"object.company_id.website or ''"
+"\">% {{ object.company_id.website }}\" style=\"text-decoration:none; color: "
+"#999999;\" t-out=\"object.company_id.website or ''\""
+">http://www.example.com</a>\n"
+"                </t>\n"
+"           </div>\n"
+"        </td>\n"
+"   </tr>\n"
+"</tbody>\n"
+"</table>\n"
+"</td></tr>\n"
+"<!-- POWERED BY -->\n"
+"<tr><td align=\"center\" style=\"min-width: 590px;\">\n"
+"    Tarafından desteklenmektedir <a target=\"_blank\" href="
+"\"https://www.odoo.com?utm_source=db&amp;utm_medium=email\" t-attf-style="
+"\"color: {{object.company_id.email_secondary_color or '#875A7B'}};;\""
+">Odoo</a>\n"
+"</td></tr>\n"
+"</table>\n"
+"        "
 
 #. module: crm
 #: model:ir.model.fields,help:crm.field_crm_team__alias_defaults
@@ -439,8 +585,11 @@ msgstr ""
 #. module: crm
 #. odoo-python
 #: code:addons/crm/models/crm_lead.py:0
+#, fuzzy
 msgid "A lead in a Won stage cannot be lost. Move it to another stage first."
 msgstr ""
+"Kazanılan bir aşamadaki liderlik kaybedilemez. Önce onu başka bir aşamaya "
+"taşıyın."
 
 #. module: crm
 #. odoo-python
@@ -459,19 +608,21 @@ msgstr "Ekip için yeni bir lider oluşturuldu: \"%(team_name)s\"."
 #: code:addons/crm/static/src/views/crm_form/crm_pls_tooltip_button.xml:0
 #: model_terms:ir.ui.view,arch_db:crm.crm_lead_view_form
 msgid "AI"
-msgstr ""
+msgstr "Yapay Zeka"
 
 #. module: crm
 #. odoo-javascript
 #: code:addons/crm/static/src/views/crm_form/crm_pls_tooltip_button.xml:0
+#, fuzzy
 msgid "AI-computed chances of winning"
-msgstr ""
+msgstr "Yapay zeka tarafından hesaplanan kazanma şansı"
 
 #. module: crm
 #. odoo-javascript
 #: code:addons/crm/static/src/views/crm_form/crm_pls_tooltip_button.xml:0
+#, fuzzy
 msgid "AI-computed chances of winning for"
-msgstr ""
+msgstr "Yapay zeka tarafından hesaplanan kazanma şansı"
 
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.sales_team_form_view_in_crm
@@ -526,8 +677,9 @@ msgstr ""
 
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.view_crm_case_leads_filter
+#, fuzzy
 msgid "Activities of"
-msgstr ""
+msgstr "Faaliyetleri"
 
 #. module: crm
 #: model:ir.model,name:crm.model_mail_activity
@@ -590,7 +742,7 @@ msgstr ""
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.view_crm_case_leads_filter
 msgid "Activity type"
-msgstr ""
+msgstr "Aktivite  Türü"
 
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.crm_lead_view_form
@@ -604,8 +756,9 @@ msgstr "Bir fırsat yaratılmadan önce bir yeterlilik adımı ekleyin."
 
 #. module: crm
 #: model:ir.actions.act_window,name:crm.mail_followers_edit_action_from_lead
+#, fuzzy
 msgid "Add/Remove Followers"
-msgstr ""
+msgstr "Takipçi Ekle/Kaldır"
 
 #. module: crm
 #: model:ir.model.fields,help:crm.field_crm_team__assignment_domain
@@ -824,7 +977,7 @@ msgstr "Ortalama Aday Kapasitesi (30 günde)"
 #. odoo-python
 #: code:addons/crm/models/crm_lead.py:0
 msgid "Belgium"
-msgstr ""
+msgstr "Belçika"
 
 #. module: crm
 #: model:ir.model.fields,field_description:crm.field_crm_lead__is_blacklisted
@@ -902,16 +1055,20 @@ msgstr "İptal"
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.crm_team_member_view_form
 msgid "Capacity"
-msgstr ""
+msgstr "Kapasite"
 
 #. module: crm
 #. odoo-python
 #: code:addons/crm/models/crm_stage.py:0
+#, fuzzy
 msgid ""
 "Changing the value of 'Is Won Stage' may induce a large number of "
 "operations, as the probabilities of opportunities in this stage will be "
 "recomputed on saving."
 msgstr ""
+"'Kazanıldı Aşaması' değerinin değiştirilmesi, bu aşamadaki fırsatların "
+"olasılıkları kaydedilirken yeniden hesaplanacağı için çok sayıda işleme "
+"neden olabilir."
 
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.crm_lost_reason_view_tree
@@ -973,8 +1130,9 @@ msgstr ""
 #. module: crm
 #. odoo-javascript
 #: code:addons/crm/static/src/views/crm_form/crm_pls_tooltip_button.xml:0
+#, fuzzy
 msgid "Close opportunities to get insights."
-msgstr ""
+msgstr "İçgörü elde etmek için fırsatları kapatın."
 
 #. module: crm
 #: model:ir.model.fields,field_description:crm.field_crm_activity_report__date_closed
@@ -1001,7 +1159,7 @@ msgstr "Kapanış Notu"
 #. module: crm
 #: model:ir.model.fields,field_description:crm.field_crm_lead_scoring_frequency_field__color
 msgid "Color"
-msgstr ""
+msgstr "Renk"
 
 #. module: crm
 #: model:ir.model.fields,field_description:crm.field_crm_lead__color
@@ -1024,8 +1182,9 @@ msgstr "Firma"
 
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.crm_lead_view_form
+#, fuzzy
 msgid "Company Information"
-msgstr ""
+msgstr "Şirket Bilgileri"
 
 #. module: crm
 #: model:ir.model.fields,field_description:crm.field_crm_lead2opportunity_partner__lead_partner_name
@@ -1053,8 +1212,9 @@ msgstr "Tamamlama tarihi"
 #. module: crm
 #. odoo-javascript
 #: code:addons/crm/static/src/views/crm_form/crm_pls_tooltip_button.xml:0
+#, fuzzy
 msgid "Computed by Odoo AI using your data."
-msgstr ""
+msgstr "Verileriniz kullanılarak Odoo AI tarafından hesaplanır."
 
 #. module: crm
 #: model:ir.model,name:crm.model_res_config_settings
@@ -1080,7 +1240,7 @@ msgstr "Yaratılan adayları şunun parçası olarak düşünün:"
 #. odoo-python
 #: code:addons/crm/models/crm_lead.py:0
 msgid "Consulting"
-msgstr ""
+msgstr "Uzmanlık"
 
 #. module: crm
 #: model:ir.model,name:crm.model_res_partner
@@ -1097,7 +1257,7 @@ msgstr "Kontak Ayrıntıları:"
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.quick_create_opportunity_form
 msgid "Contact Email"
-msgstr ""
+msgstr "İletişim E-postası"
 
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.crm_lead_view_form
@@ -1114,7 +1274,7 @@ msgstr "Kontak Adı"
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.quick_create_opportunity_form
 msgid "Contact Phone"
-msgstr ""
+msgstr "Kontak Telefonu"
 
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.crm_lead_merge_summary
@@ -1124,7 +1284,7 @@ msgstr "Kontak:"
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.crm_lead_view_form
 msgid "Contacts"
-msgstr ""
+msgstr "Kontaklar"
 
 #. module: crm
 #: model:ir.model.fields,field_description:crm.field_crm_lead2opportunity_partner__name
@@ -1226,8 +1386,9 @@ msgstr "Fırsat Oluştur"
 
 #. module: crm
 #: model:ir.model,website_form_label:crm.model_res_partner
+#, fuzzy
 msgid "Create a Customer"
-msgstr ""
+msgstr "Müşteri Oluşturma"
 
 #. module: crm
 #: model_terms:ir.actions.act_window,help:crm.crm_lead_all_leads
@@ -1357,7 +1518,7 @@ msgstr "Müşteri"
 #. module: crm
 #: model:ir.model.fields,field_description:crm.field_crm_lead__commercial_partner_id
 msgid "Customer Company"
-msgstr ""
+msgstr "Müşteri Şirketi"
 
 #. module: crm
 #: model:ir.ui.menu,name:crm.res_partner_menu_customer
@@ -1372,8 +1533,9 @@ msgstr "Kapanış Tarihi"
 
 #. module: crm
 #: model:ir.model.fields,help:crm.field_crm_lead__rotting_days
+#, fuzzy
 msgid "Day count since this resource was last updated"
-msgstr ""
+msgstr "Bu kaynağın son güncellenmesinden bu yana geçen gün sayısı"
 
 #. module: crm
 #: model:ir.model.fields.selection,name:crm.selection__res_config_settings__crm_auto_assignment_interval_type__days
@@ -1382,8 +1544,9 @@ msgstr "Gün"
 
 #. module: crm
 #: model:ir.model.fields,field_description:crm.field_crm_lead__rotting_days
+#, fuzzy
 msgid "Days Rotting"
-msgstr ""
+msgstr "Çürüyen Günler"
 
 #. module: crm
 #: model:ir.model.fields,field_description:crm.field_crm_lead__day_open
@@ -1397,8 +1560,9 @@ msgstr "Kapanacak Günler"
 
 #. module: crm
 #: model:ir.model.fields,field_description:crm.field_crm_stage__rotting_threshold_days
+#, fuzzy
 msgid "Days to rot"
-msgstr ""
+msgstr "Çürümeye kalan günler"
 
 #. module: crm
 #. odoo-python
@@ -1472,7 +1636,7 @@ msgstr "Özet"
 #: model_terms:ir.ui.view,arch_db:crm.crm_lead_lost_view_form
 #: model_terms:ir.ui.view,arch_db:crm.crm_lead_pls_update_view_form
 msgid "Discard"
-msgstr ""
+msgstr "Sil"
 
 #. module: crm
 #: model:ir.model.fields,field_description:crm.field_calendar_event__display_name
@@ -1509,20 +1673,23 @@ msgstr "Erişiminiz yok, kullanıcı e-mail özeti için bu veriyi atlayın"
 #. module: crm
 #. odoo-python
 #: code:addons/crm/models/crm_stage.py:0
+#, fuzzy
 msgid "Do you really want to update this stage?"
-msgstr ""
+msgstr "Bu aşamayı gerçekten güncellemek istiyor musunuz?"
 
 #. module: crm
 #. odoo-javascript
 #: code:addons/crm/static/src/views/crm_form/crm_pls_tooltip_button.xml:0
+#, fuzzy
 msgid "Does not have a"
-msgstr ""
+msgstr "Yok"
 
 #. module: crm
 #. odoo-javascript
 #: code:addons/crm/static/src/views/crm_form/crm_pls_tooltip_button.xml:0
+#, fuzzy
 msgid "Does not have an"
-msgstr ""
+msgstr "Yok"
 
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.sales_team_form_view_in_crm
@@ -1531,8 +1698,9 @@ msgstr "Alan Adı"
 
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.view_crm_lead2opportunity_partner
+#, fuzzy
 msgid "Don't link to a company"
-msgstr ""
+msgstr "Bir şirkete bağlantı vermeyin"
 
 #. module: crm
 #. odoo-javascript
@@ -1687,8 +1855,9 @@ msgstr "Beklenen Gelirler"
 #. module: crm
 #. odoo-python
 #: code:addons/crm/models/crm_lead.py:0
+#, fuzzy
 msgid "Exploration"
-msgstr ""
+msgstr "Keşif"
 
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.crm_lead_view_form
@@ -1748,16 +1917,18 @@ msgstr "Yazı tipi harika simgesi ör. fa-görevler"
 
 #. module: crm
 #: model_terms:digest.tip,tip_description:crm.digest_tip_crm_1
+#, fuzzy
 msgid ""
 "For a sales team, there is nothing worse than being dry on leads. "
 "Fortunately, in just a few clicks, you can generate leads specifically "
 "targeted to your needs: company size, industry, etc. To help you test the "
-"feature, we offer you 200 credits for free."
+"feature, we offer you 20 credits for free."
 msgstr ""
-"Bir satış ekibi için müşteri adayı bulamamak kadar kötüsü yoktur. Neyse ki "
-"sadece birkaç tıklamayla ihtiyaçlarınıza göre (şirket büyüklüğü, sektör vs.) "
-"özel olarak hedeflenmiş müşteri adayları oluşturabilirsiniz. Bu özelliği "
-"test etmenize yardımcı olmak için size ücretsiz 200 kredi sunuyoruz."
+"Bir satış ekibi için müşteri adayı bulamamak kadar kötü bir şey yoktur. "
+"Neyse ki, sadece birkaç tıklamayla, ihtiyaçlarınıza göre özel olarak "
+"hedeflenmiş müşteri adayları oluşturabilirsiniz: şirket büyüklüğü, sektör "
+"vb. Bu özelliği test etmenize yardımcı olmak için size ücretsiz 20 alacak "
+"sunuyoruz."
 
 #. module: crm
 #: model:ir.model.fields,field_description:crm.field_crm_lead2opportunity_partner__force_assignment
@@ -1831,8 +2002,9 @@ msgstr "Mesaj Var"
 #. module: crm
 #. odoo-javascript
 #: code:addons/crm/static/src/views/crm_form/crm_pls_tooltip_button.xml:0
+#, fuzzy
 msgid "Has a"
-msgstr ""
+msgstr "Bir"
 
 #. module: crm
 #: model:ir.model.fields.selection,name:crm.selection__crm_lead__priority__2
@@ -1841,17 +2013,23 @@ msgstr "Yüksek"
 
 #. module: crm
 #: model:ir.model.fields,help:crm.field_crm_stage__rotting_threshold_days
+#, fuzzy
 msgid ""
 "Highlight opportunities that haven't been updated for this many "
 "days.         Set to 0 to disable. Changing this parameter will not affect "
 "the rotting status/date of resources last updated before this change."
 msgstr ""
+"Şu kadar gündür güncellenmemiş fırsatları vurgulayın.         Devre dışı "
+"bırakmak için 0 olarak ayarlayın. Bu parametrenin değiştirilmesi, bu "
+"değişiklikten önce en son güncellenen kaynakların çürüme durumunu/tarihini "
+"etkilemeyecektir."
 
 #. module: crm
 #. odoo-javascript
 #: code:addons/crm/static/src/views/crm_form/crm_pls_tooltip_button.xml:0
+#, fuzzy
 msgid "Historic win rate"
-msgstr ""
+msgstr "Tarihi kazanma oranı"
 
 #. module: crm
 #: model:ir.model.fields.selection,name:crm.selection__res_config_settings__crm_auto_assignment_interval_type__hours
@@ -2016,7 +2194,7 @@ msgstr "İş Ortağı Görünür mü"
 #. module: crm
 #: model:ir.model.fields,field_description:crm.field_crm_activity_report__won_status
 msgid "Is Won"
-msgstr ""
+msgstr "Kazanıldı"
 
 #. module: crm
 #: model:ir.model.fields,field_description:crm.field_crm_stage__is_won
@@ -2066,8 +2244,9 @@ msgstr "Dil"
 #. module: crm
 #. odoo-javascript
 #: code:addons/crm/static/src/views/crm_form/crm_pls_tooltip_button.xml:0
+#, fuzzy
 msgid "Language is"
-msgstr ""
+msgstr "Dil"
 
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.crm_lead_merge_summary
@@ -2143,8 +2322,9 @@ msgstr "Aday"
 
 #. module: crm
 #: model:ir.actions.act_window,name:crm.mail_activity_plan_action_lead
+#, fuzzy
 msgid "Lead Activity Plans"
-msgstr ""
+msgstr "Lider Faaliyet Planları"
 
 #. module: crm
 #: model:ir.model.fields,field_description:crm.field_crm_team__assignment_enabled
@@ -2154,13 +2334,15 @@ msgstr "Aday Ataması"
 
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.crm_team_member_view_form
+#, fuzzy
 msgid "Lead Assignment"
-msgstr ""
+msgstr "Lider Atama"
 
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.crm_team_member_view_form
+#, fuzzy
 msgid "Lead Assignment Filter"
-msgstr ""
+msgstr "Kurşun Atama Filtresi"
 
 #. module: crm
 #. odoo-python
@@ -2190,8 +2372,9 @@ msgstr "Aday Madenciliği"
 
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.crm_team_member_view_form
+#, fuzzy
 msgid "Lead Priority Filter"
-msgstr ""
+msgstr "Kurşun Öncelik Filtresi"
 
 #. module: crm
 #: model:ir.model.fields,field_description:crm.field_crm_team__lead_properties_definition
@@ -2362,7 +2545,7 @@ msgstr "Adaylar/Fırsatlar sayısı"
 #. odoo-javascript
 #: code:addons/crm/static/src/views/crm_form/crm_pls_tooltip_button.xml:0
 msgid "Learn More"
-msgstr ""
+msgstr "Daha Fazla Bilgi"
 
 #. module: crm
 #. odoo-javascript
@@ -2411,8 +2594,9 @@ msgstr "Yerel Kodu"
 #. module: crm
 #. odoo-javascript
 #: code:addons/crm/static/src/views/crm_form/crm_pls_tooltip_button.xml:0
+#, fuzzy
 msgid "Located in"
-msgstr ""
+msgstr "İçinde bulunan"
 
 #. module: crm
 #: model_terms:ir.actions.act_window,help:crm.crm_lead_action_my_activities
@@ -2486,7 +2670,7 @@ msgstr "Düşük"
 #. odoo-javascript
 #: code:addons/crm/static/src/views/crm_kanban/crm_column_progress.xml:0
 msgid "MRR"
-msgstr ""
+msgstr "MRR"
 
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.res_config_settings_view_form
@@ -2505,10 +2689,13 @@ msgstr "Yinelenen Planları Yönetin"
 
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.res_config_settings_view_form
+#, fuzzy
 msgid ""
 "Manage members or partners. Members get grades and pricelists, partners "
 "allow lead assignment and commission plans."
 msgstr ""
+"Üyeleri veya ortakları yönetin. Üyeler notlar ve fiyat listeleri alır, "
+"ortaklar müşteri adayı atama ve komisyon planlarına izin verir."
 
 #. module: crm
 #: model:ir.model.fields,help:crm.field_res_config_settings__crm_auto_assignment_action
@@ -2607,15 +2794,19 @@ msgstr ""
 #. module: crm
 #. odoo-python
 #: code:addons/crm/models/crm_team_member.py:0
+#, fuzzy
 msgid ""
 "Member preferred assignment domain for user %(user)s and team %(team)s is "
 "incorrectly formatted"
 msgstr ""
+"Kullanıcı %(user)s ve ekip %(team)s için üye tercih edilen atama etki alanı "
+"hatalı biçimlendirilmiş"
 
 #. module: crm
 #: model:ir.model.fields,field_description:crm.field_res_config_settings__module_partnership
+#, fuzzy
 msgid "Membership / Partnership"
-msgstr ""
+msgstr "Üyelik / Ortaklık"
 
 #. module: crm
 #: model:ir.actions.act_window,name:crm.action_merge_opportunities
@@ -2807,8 +2998,9 @@ msgstr ""
 
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.crm_lead_view_form
+#, fuzzy
 msgid "No closing estimate"
-msgstr ""
+msgstr "Kapanış tahmini yok"
 
 #. module: crm
 #: model_terms:ir.actions.act_window,help:crm.crm_opportunity_report_action
@@ -2819,8 +3011,11 @@ msgstr "Veri bulunamadı!"
 #. module: crm
 #. odoo-python
 #: code:addons/crm/models/crm_lead.py:0
+#, fuzzy
 msgid "No detours, no delays - from %(stage_name)s straight to the win! 🚀"
 msgstr ""
+"Dolambaçlı yol yok, gecikme yok - %(stage_name)s adresinden doğrudan "
+"galibiyete! 🚀"
 
 #. module: crm
 #. odoo-python
@@ -2872,8 +3067,9 @@ msgstr "Yeterli stok yok"
 
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.crm_lead_view_form
+#, fuzzy
 msgid "Not specified"
-msgstr ""
+msgstr "Belirtilmemiş"
 
 #. module: crm
 #: model:ir.model.fields,field_description:crm.field_crm_lead__description
@@ -2918,15 +3114,19 @@ msgstr "Bu son ay içinde atanan aday ve fırsat sayısı"
 
 #. module: crm
 #: model:ir.model.fields,help:crm.field_crm_team_member__lead_day_count
+#, fuzzy
 msgid ""
 "Number of leads assigned to this member in the last 24 hours (lost leads "
 "excluded)"
 msgstr ""
+"Son 24 saat içinde bu üyeye atanan müşteri adayı sayısı (kayıp müşteri "
+"adayları hariç)"
 
 #. module: crm
 #: model:ir.model.fields,help:crm.field_crm_team_member__lead_month_count
+#, fuzzy
 msgid "Number of leads assigned to this member in the last 30 days"
-msgstr ""
+msgstr "Son 30 gün içinde bu üyeye atanan potansiyel müşteri sayısı"
 
 #. module: crm
 #: model:ir.model.fields,help:crm.field_crm_lead__message_needaction_counter
@@ -3099,8 +3299,9 @@ msgstr "Fırsat kazanıldı"
 
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.quick_create_opportunity_form
+#, fuzzy
 msgid "Opportunity's Name"
-msgstr ""
+msgstr "Fırsatın Adı"
 
 #. module: crm
 #: model:ir.model.fields,help:crm.field_crm_team__alias_force_thread_id
@@ -3132,7 +3333,7 @@ msgstr "Gecikmiş Fırsatlar"
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.crm_lead_view_form
 msgid "Ownership"
-msgstr ""
+msgstr "Mülkiyet"
 
 #. module: crm
 #: model:ir.model.fields,field_description:crm.field_crm_team__alias_parent_model_id
@@ -3172,20 +3373,22 @@ msgstr "İş ortağı kara listede"
 
 #. module: crm
 #: model:ir.model.fields,field_description:crm.field_crm_team_member__assignment_optout
+#, fuzzy
 msgid "Pause assignment"
-msgstr ""
+msgstr "Görevi duraklat"
 
 #. module: crm
 #: model:ir.model.fields.selection,name:crm.selection__crm_activity_report__won_status__pending
 #: model:ir.model.fields.selection,name:crm.selection__crm_lead__won_status__pending
 msgid "Pending"
-msgstr ""
+msgstr "Bekleyen"
 
 #. module: crm
 #. odoo-python
 #: code:addons/crm/models/crm_lead.py:0
+#, fuzzy
 msgid "Phew, that took some effort — but you nailed it. Good job!"
-msgstr ""
+msgstr "Vay be, bu biraz çaba gerektirdi - ama başardınız. İyi iş çıkardın!"
 
 #. module: crm
 #: model:ir.model.fields,field_description:crm.field_crm_lead__phone
@@ -3200,7 +3403,7 @@ msgstr "Kara Listeye Alınmış Telefon"
 #. module: crm
 #: model:ir.model.fields,field_description:crm.field_crm_lead__phone_mobile_search
 msgid "Phone Number"
-msgstr ""
+msgstr "Telefon Numarası"
 
 #. module: crm
 #: model:ir.model.fields,field_description:crm.field_crm_lead__phone_state
@@ -3293,8 +3496,9 @@ msgstr "Tahmini Aday Puanlama: Otomatize Olasılıkları Yeniden Hesapla"
 
 #. module: crm
 #: model:ir.model.fields,field_description:crm.field_crm_team_member__assignment_domain_preferred
+#, fuzzy
 msgid "Preference assignment Domain"
-msgstr ""
+msgstr "Tercih atama Etki alanı"
 
 #. module: crm
 #: model:ir.model.fields,field_description:crm.field_crm_lead__priority
@@ -3462,8 +3666,9 @@ msgstr "Ringover VOIP Telefon"
 #. module: crm
 #: model:ir.model.fields,field_description:crm.field_crm_lead__is_rotting
 #: model_terms:ir.ui.view,arch_db:crm.view_crm_case_opportunities_filter
+#, fuzzy
 msgid "Rotting"
-msgstr ""
+msgstr "Çürüme"
 
 #. module: crm
 #: model:ir.model.fields,field_description:crm.field_res_config_settings__crm_use_auto_assignment
@@ -3563,13 +3768,15 @@ msgstr "Fırsatlarda Ara"
 #. module: crm
 #. odoo-javascript
 #: code:addons/crm/static/src/views/crm_form/crm_pls_tooltip_button.xml:0
+#, fuzzy
 msgid "See AI-computed chances details"
-msgstr ""
+msgstr "Yapay zeka ile hesaplanmış şans detaylarına bakın"
 
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.crm_lead_lost_view_form
+#, fuzzy
 msgid "Select a Lost Reason..."
-msgstr ""
+msgstr "Bir Kayıp Nedeni Seçin..."
 
 #. module: crm
 #. odoo-python
@@ -3611,8 +3818,9 @@ msgstr "Ayarlar"
 
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.crm_stage_form
+#, fuzzy
 msgid "Shared with all teams"
-msgstr ""
+msgstr "Tüm ekiplerle paylaşıldı"
 
 #. module: crm
 #: model:res.groups,name:crm.group_use_lead
@@ -3668,8 +3876,9 @@ msgstr "Kaynak"
 #. module: crm
 #. odoo-javascript
 #: code:addons/crm/static/src/views/crm_form/crm_pls_tooltip_button.xml:0
+#, fuzzy
 msgid "Source is"
-msgstr ""
+msgstr "Kaynak"
 
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.crm_lead_merge_summary
@@ -3787,8 +3996,9 @@ msgstr "Alt-Tür"
 
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.crm_lead_view_form
+#, fuzzy
 msgid "Switch to AI-computed probabilities"
-msgstr ""
+msgstr "Yapay zeka tarafından hesaplanan olasılıklara geçiş"
 
 #. module: crm
 #: model:ir.model,name:crm.model_ir_config_parameter
@@ -3804,8 +4014,9 @@ msgstr "Etiket"
 #. module: crm
 #. odoo-javascript
 #: code:addons/crm/static/src/views/crm_form/crm_pls_tooltip_button.xml:0
+#, fuzzy
 msgid "Tagged as"
-msgstr ""
+msgstr "Tagged as"
 
 #. module: crm
 #: model:ir.model.fields,field_description:crm.field_crm_activity_report__tag_ids
@@ -3852,8 +4063,9 @@ msgstr ""
 #. module: crm
 #. odoo-python
 #: code:addons/crm/models/crm_lead.py:0
+#, fuzzy
 msgid "The lead %s cannot be won and lost at the same time."
-msgstr ""
+msgstr "Kurşun %s aynı anda hem kazanılıp hem de kaybedilemez."
 
 #. module: crm
 #: model:ir.model.fields,help:crm.field_crm_team__alias_model_id
@@ -3981,10 +4193,13 @@ msgstr ""
 #. module: crm
 #. odoo-python
 #: code:addons/crm/models/crm_lead.py:0
+#, fuzzy
 msgid ""
 "This new lead created by %(creation_source)s was automatically assigned to "
 "team leader %(user_name)s"
 msgstr ""
+"%(creation_source)s tarafından oluşturulan bu yeni müşteri adayı otomatik "
+"olarak ekip liderine atandı %(user_name)s"
 
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.crm_lead_view_form
@@ -4081,14 +4296,16 @@ msgstr "Çok pahalı"
 #. module: crm
 #. odoo-javascript
 #: code:addons/crm/static/src/views/crm_form/crm_pls_tooltip_button.xml:0
+#, fuzzy
 msgid "Top Negatives"
-msgstr ""
+msgstr "En İyi Negatifler"
 
 #. module: crm
 #. odoo-javascript
 #: code:addons/crm/static/src/views/crm_form/crm_pls_tooltip_button.xml:0
+#, fuzzy
 msgid "Top Positives"
-msgstr ""
+msgstr "En Olumlu Yönler"
 
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.crm_activity_report_view_search
@@ -4300,8 +4517,9 @@ msgstr "Çok Yüksek"
 
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.crm_lead_view_form
+#, fuzzy
 msgid "Visible to all"
-msgstr ""
+msgstr "Herkes tarafından görülebilir"
 
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.res_config_settings_view_form
@@ -4372,26 +4590,30 @@ msgstr "Kazanılan Sayı"
 
 #. module: crm
 #: model:ir.model.fields,field_description:crm.field_crm_lead__won_status
+#, fuzzy
 msgid "Won/Lost"
-msgstr ""
+msgstr "Kazandı/Kaybetti"
 
 #. module: crm
 #. odoo-python
 #: code:addons/crm/models/crm_lead.py:0
+#, fuzzy
 msgid "Wow, that was fast. That deal didn’t stand a chance!"
-msgstr ""
+msgstr "Vay canına, bu çok hızlıydı. O anlaşmanın hiç şansı yoktu!"
 
 #. module: crm
 #. odoo-python
 #: code:addons/crm/models/crm_lead.py:0
+#, fuzzy
 msgid "Yay, your first win from %(utm_source_name)s!"
-msgstr ""
+msgstr "Yaşasın, %(utm_source_name)s'dan ilk kazancınız!"
 
 #. module: crm
 #. odoo-python
 #: code:addons/crm/models/crm_lead.py:0
+#, fuzzy
 msgid "Yeah! Best deal out of the last 7 days for the team."
-msgstr ""
+msgstr "Evet! Takım için son 7 günün en iyi anlaşması."
 
 #. module: crm
 #: model:crm.recurring.plan,name:crm.crm_recurring_plan_yearly
@@ -4431,8 +4653,9 @@ msgstr "son 7 gün için personel kaydını henüz geçtiniz."
 #. module: crm
 #. odoo-python
 #: code:addons/crm/models/crm_lead.py:0
+#, fuzzy
 msgid "You just expanded the map! First win in %(country)s."
-msgstr ""
+msgstr "Haritayı genişlettin! %(country)s adresindeki ilk galibiyet."
 
 #. module: crm
 #: model_terms:ir.actions.act_window,help:crm.crm_case_form_view_salesteams_opportunity
@@ -4451,14 +4674,16 @@ msgstr ""
 #. module: crm
 #. odoo-python
 #: code:addons/crm/models/crm_lead.py:0
+#, fuzzy
 msgid "You're on a winning streak. 3 deals in 3 days, congrats!"
-msgstr ""
+msgstr "Kazanma serisindesin. 3 günde 3 anlaşma, tebrikler!"
 
 #. module: crm
 #. odoo-python
 #: code:addons/crm/models/crm_lead.py:0
+#, fuzzy
 msgid "You're on fire! Fifth deal won today 🔥"
-msgstr ""
+msgstr "Yanıyorsun! Bugün beşinci anlaşma kazanıldı 🔥"
 
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.crm_lead_view_form
@@ -4509,8 +4734,9 @@ msgstr "örn. sirketim.com"
 #. module: crm
 #. odoo-javascript
 #: code:addons/crm/static/src/views/crm_form/crm_pls_tooltip_button.xml:0
+#, fuzzy
 msgid "email address"
-msgstr ""
+msgstr "e-posta adresi"
 
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.res_config_settings_view_form
@@ -4525,50 +4751,57 @@ msgstr "fırsat havuzunuzda fırsatlar mı yaratıyorsunuz?<br>"
 #. module: crm
 #. odoo-javascript
 #: code:addons/crm/static/src/views/crm_form/crm_pls_tooltip_button.xml:0
+#, fuzzy
 msgid "has value"
-msgstr ""
+msgstr "değeri vardır"
 
 #. module: crm
 #. odoo-python
 #: code:addons/crm/models/crm_lead.py:0
+#, fuzzy
 msgid "incoming email"
-msgstr ""
+msgstr "gelen e-posta"
 
 #. module: crm
 #. odoo-python
 #: code:addons/crm/models/crm_lost_reason.py:0
+#, fuzzy
 msgid "lost_reason_id"
-msgstr ""
+msgstr "lost_reason_id"
 
 #. module: crm
 #. odoo-javascript
 #: code:addons/crm/static/src/views/forecast_kanban/forecast_kanban_column_quick_create.js:0
+#, fuzzy
 msgid "next %s"
-msgstr ""
+msgstr "sonraki %s"
 
 #. module: crm
 #. odoo-javascript
 #: code:addons/crm/static/src/views/crm_form/crm_pls_tooltip_button.xml:0
+#, fuzzy
 msgid "phone number"
-msgstr ""
+msgstr "telefon numarası"
 
 #. module: crm
 #. odoo-javascript
 #: code:addons/crm/static/src/views/crm_form/crm_pls_tooltip_button.xml:0
+#, fuzzy
 msgid "sample data"
-msgstr ""
+msgstr "örnek veri"
 
 #. module: crm
 #. odoo-javascript
 #: code:addons/crm/static/src/views/crm_form/crm_pls_tooltip_button.xml:0
 msgid "stage"
-msgstr ""
+msgstr "sahne"
 
 #. module: crm
 #. odoo-javascript
 #: code:addons/crm/static/src/views/crm_form/crm_pls_tooltip_button.xml:0
+#, fuzzy
 msgid "team"
-msgstr ""
+msgstr "takım"
 
 #. module: crm
 #: model:ir.model.fields,field_description:crm.field_crm_stage__team_count
@@ -4578,8 +4811,9 @@ msgstr "team_count"
 #. module: crm
 #. odoo-javascript
 #: code:addons/crm/static/src/views/crm_form/crm_pls_tooltip_button.xml:0
+#, fuzzy
 msgid "this lead"
-msgstr ""
+msgstr "bu kurşun"
 
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.crm_action_helper
@@ -4596,8 +4830,9 @@ msgstr ""
 #. module: crm
 #. odoo-python
 #: code:addons/crm/models/crm_lead.py:0
+#, fuzzy
 msgid "type"
-msgstr ""
+msgstr "tip"
 
 #. module: crm
 #. odoo-python
@@ -4608,14 +4843,28 @@ msgstr "bilinmeyen"
 #. module: crm
 #. odoo-javascript
 #: code:addons/crm/static/src/views/crm_form/crm_pls_tooltip_button.xml:0
+#, fuzzy
 msgid "valid email address"
-msgstr ""
+msgstr "geçerli e-posta adresi"
 
 #. module: crm
 #. odoo-javascript
 #: code:addons/crm/static/src/views/crm_form/crm_pls_tooltip_button.xml:0
+#, fuzzy
 msgid "valid phone number"
-msgstr ""
+msgstr "geçerli telefon numarası"
+
+#~ msgid ""
+#~ "For a sales team, there is nothing worse than being dry on leads. "
+#~ "Fortunately, in just a few clicks, you can generate leads specifically "
+#~ "targeted to your needs: company size, industry, etc. To help you test the "
+#~ "feature, we offer you 200 credits for free."
+#~ msgstr ""
+#~ "Bir satış ekibi için müşteri adayı bulamamak kadar kötüsü yoktur. Neyse "
+#~ "ki sadece birkaç tıklamayla ihtiyaçlarınıza göre (şirket büyüklüğü, "
+#~ "sektör vs.) özel olarak hedeflenmiş müşteri adayları oluşturabilirsiniz. "
+#~ "Bu özelliği test etmenize yardımcı olmak için size ücretsiz 200 kredi "
+#~ "sunuyoruz."
 
 #~ msgid "# Meetings"
 #~ msgstr "# Toplantılar"

@@ -42,7 +42,9 @@ patch(Thread.prototype, {
     },
     get autoOpenChatWindowOnNewMessage() {
         return (
-            (this.channel_type === "livechat" && !this.store.chatHub.compact) ||
+            (this.channel_type === "livechat" &&
+                !this.store.chatHub.compact &&
+                this.self_member_id) ||
             super.autoOpenChatWindowOnNewMessage
         );
     },
@@ -80,7 +82,7 @@ patch(Thread.prototype, {
      * @param {import("models").Persona} persona
      */
     getPersonaName(persona) {
-        if (this.channel_type === "livechat" && persona.user_livechat_username) {
+        if (this.channel_type === "livechat" && persona?.user_livechat_username) {
             return persona.user_livechat_username;
         }
         return super.getPersonaName(persona);

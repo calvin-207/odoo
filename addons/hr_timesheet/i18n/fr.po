@@ -8,13 +8,14 @@
 # Cécile Collart <cco@odoo.com>, 2022
 # Jolien De Paepe, 2023
 # "Dylan Kiss (dyki)" <dyki@odoo.com>, 2025.
+# Weblate <noreply-mt-weblate@weblate.org>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-11 13:57+0000\n"
-"PO-Revision-Date: 2025-09-14 21:19+0000\n"
-"Last-Translator: \"Dylan Kiss (dyki)\" <dyki@odoo.com>\n"
+"POT-Creation-Date: 2025-10-08 18:37+0000\n"
+"PO-Revision-Date: 2025-11-14 15:21+0000\n"
+"Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
 "Language-Team: French <https://translate.odoo.com/projects/odoo-19/"
 "hr_timesheet/fr/>\n"
 "Language: fr\n"
@@ -92,8 +93,8 @@ msgid ""
 "'%(missing_plan_names)s' analytic plan(s) required on the project '%"
 "(project_name)s' linked to the timesheet."
 msgstr ""
-"'%(missing_plan_names)s' plan(s) analytique(s) requis pour le projet "
-"'%(project_name)s' lié à la feuille de temps."
+"'%(missing_plan_names)s' plan(s) analytique(s) requis pour le projet '%"
+"(project_name)s' lié à la feuille de temps."
 
 #. module: hr_timesheet
 #. odoo-python
@@ -187,8 +188,8 @@ msgstr ""
 "                            Voici vos deux options : soit supprimer ces "
 "feuilles de temps, soit envisager d’archiver l’employé à la place.\n"
 "                        </span>\n"
-"                        <span invisible=\"has_active_employee\" groups="
-"\"hr_timesheet.group_hr_timesheet_approver\">\n"
+"                        <span invisible=\"has_active_employee\" "
+"groups=\"hr_timesheet.group_hr_timesheet_approver\">\n"
 "                            Veuillez d’abord supprimer toutes leurs feuilles "
 "de temps.\n"
 "                        </span>\n"
@@ -603,7 +604,7 @@ msgstr "Dispose de l'accès responsable du département"
 #. module: hr_timesheet
 #: model:ir.model.fields,field_description:hr_timesheet.field_hr_employee_public__has_timesheet
 msgid "Has Timesheet"
-msgstr ""
+msgstr "A une feuille de temps"
 
 #. module: hr_timesheet
 #: model:ir.model.fields.selection,name:hr_timesheet.selection__res_config_settings__timesheet_encode_method__hours
@@ -862,7 +863,7 @@ msgstr "Feuilles de temps du projet"
 #. module: hr_timesheet
 #: model:ir.model,name:hr_timesheet.model_hr_employee_public
 msgid "Public Employee"
-msgstr ""
+msgstr "Employé public"
 
 #. module: hr_timesheet
 #: model_terms:ir.actions.act_window,help:hr_timesheet.act_hr_timesheet_line_by_project
@@ -1388,8 +1389,8 @@ msgid ""
 "timesheets feature."
 msgstr ""
 "Pour utiliser la fonction de feuilles de temps, vous devez disposer d'un "
-"compte analytique pour votre projet. Veuillez en créer un dans le plan "
-"'%(plan_name)s' ou désactiver la fonctionnalité de feuilles de temps."
+"compte analytique pour votre projet. Veuillez en créer un dans le plan '%"
+"(plan_name)s' ou désactiver la fonctionnalité de feuilles de temps."
 
 #. module: hr_timesheet
 #. odoo-python
@@ -1462,6 +1463,17 @@ msgid ""
 "        Make sure to use the right format and order e.g. Improve the "
 "configuration screen 5h #feature #v16 @Mitchell !"
 msgstr ""
+"Utilisez ces mots-clés dans le titre pour créer de nouvelles tâches :\n"
+"\n"
+"    30h Allouer 30 heures à la tâche  \n"
+"    #tags Ajouter des tags à la tâche  \n"
+"    @user Assigner la tâche à un utilisateur  \n"
+"    ! Définir la tâche comme priorité moyenne  \n"
+"    !! Définir la tâche comme priorité élevée  \n"
+"    !!! Définir la tâche comme priorité urgente  \n"
+"\n"
+"    Veillez à utiliser le bon format et l’ordre correct, par exemple : "
+"Améliorer l’écran de configuration 5h #feature #v16 @Mitchell !"
 
 #. module: hr_timesheet
 #: model:ir.model.fields,field_description:hr_timesheet.field_account_analytic_line__user_id
@@ -1584,8 +1596,8 @@ msgid ""
 "                        <span class=\"fw-bold text-dark\"> Sub-tasks</span>)"
 msgstr ""
 "sur\n"
-"                        <span class=\"fw-bold text-dark\"> des sous-"
-"tâches</span>)"
+"                        <span class=\"fw-bold text-dark\"> des sous-tâches</"
+"span>)"
 
 #~ msgid "%s Spent"
 #~ msgstr "%s passé"

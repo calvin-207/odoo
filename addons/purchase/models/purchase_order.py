@@ -268,7 +268,7 @@ class PurchaseOrder(models.Model):
                 company=order.company_id,
             )
             if order.currency_id != order.company_currency_id:
-                order.tax_totals['amount_total_cc'] = f"({formatLang(self.env, order.amount_total_cc, currency_obj=self.company_currency_id)})"
+                order.tax_totals['amount_total_cc'] = f"({formatLang(self.env, order.amount_total_cc, currency_obj=order.company_currency_id)})"
 
     @api.depends('company_id.account_fiscal_country_id', 'fiscal_position_id.country_id', 'fiscal_position_id.foreign_vat')
     def _compute_tax_country_id(self):
@@ -292,10 +292,13 @@ class PurchaseOrder(models.Model):
 
     @api.depends('partner_id.name', 'partner_id.purchase_warn_msg', 'order_line.purchase_line_warn_msg')
     def _compute_purchase_warning_text(self):
+        if not self.env.user.has_group('purchase.group_warning_purchase'):
+            self.purchase_warning_text = ''
+            return
         for order in self:
             warnings = OrderedSet()
             if partner_msg := order.partner_id.purchase_warn_msg:
-                warnings.add(order.partner_id.name + ' - ' + partner_msg)
+                warnings.add((order.partner_id.name or order.partner_id.display_name) + ' - ' + partner_msg)
             for line in order.order_line:
                 if product_msg := line.purchase_line_warn_msg:
                     warnings.add(line.product_id.display_name + ' - ' + product_msg)
@@ -618,6 +621,10 @@ class PurchaseOrder(models.Model):
         return True
 
     def button_cancel(self):
+        locked_purchase_orders = self.filtered(lambda po: po.locked)
+        if locked_purchase_orders:
+            raise UserError(self.env._("Unable to cancel purchase order(s): %s. You must first unlock them.", locked_purchase_orders.mapped('display_name')))
+
         purchase_orders_with_invoices = self.filtered(lambda po: any(i.state not in ('cancel', 'draft') for i in po.invoice_ids))
         if purchase_orders_with_invoices:
             raise UserError(_("Unable to cancel purchase order(s): %s. You must first cancel their related vendor bills.", purchase_orders_with_invoices.mapped('display_name')))
@@ -1185,12 +1192,18 @@ class PurchaseOrder(models.Model):
             params=params
         )
         if seller:
+            product_uom = (seller.product_id or seller.product_tmpl_id).uom_id
             price = seller.price_discounted
             if seller.currency_id != self.currency_id:
-                price = seller.currency_id._convert(seller.price_discounted, self.currency_id)
+                price = seller.currency_id._convert(price, self.currency_id)
+            if seller.product_uom_id != product_uom:
+                # The discounted price is expressed in the product's UoM, not in the vendor
+                # price's UoM, so we need to convert it into to match the displayed UoM.
+                price = product_uom._compute_price(price, seller.product_uom_id)
             product_infos.update(
                 price=price,
                 min_qty=seller.min_qty,
+                uomDisplayName=seller.product_uom_id.display_name,
             )
 
         return product_infos
@@ -1272,7 +1285,7 @@ class PurchaseOrder(models.Model):
         self.ensure_one()
         pol = self.order_line.filtered(
             lambda l: l.product_id.id == product_id
-            and l.get_parent_section_line().id == section_id,
+            and l.get_parent_section_line().id == section_id
         )
         if pol:
             if quantity != 0:
@@ -1293,10 +1306,11 @@ class PurchaseOrder(models.Model):
             if pol.selected_seller_id:
                 # Fix the PO line's price on the seller's one.
                 seller = pol.selected_seller_id
-                price = seller.price_discounted
+                price = seller.price
                 if seller.currency_id != self.currency_id:
-                    price = seller.currency_id._convert(seller.price_discounted, self.currency_id)
-                pol.price_unit = price
+                    price = seller.currency_id._convert(price, self.currency_id)
+                pol.price_unit = pol.technical_price_unit = price
+                pol.discount = seller.discount
         return pol.price_unit_discounted
 
     def _get_default_create_section_values(self):

@@ -1,4 +1,4 @@
-import { describe, expect, test } from "@odoo/hoot";
+import { describe, expect, test, Deferred } from "@odoo/hoot";
 import { animationFrame, mockDate } from "@odoo/hoot-mock";
 import {
     defineSpreadsheetActions,
@@ -12,7 +12,6 @@ import {
     patchWithCleanup,
     serverState,
 } from "@web/../tests/web_test_helpers";
-import { Deferred } from "@web/core/utils/concurrency";
 
 import {
     addGlobalFilter,
@@ -27,6 +26,7 @@ import {
     getCellValue,
     getEvaluatedCell,
     getFormattedValueGrid,
+    getEvaluatedGrid,
 } from "@spreadsheet/../tests/helpers/getters";
 import { createModelWithDataSource } from "@spreadsheet/../tests/helpers/model";
 import { createSpreadsheetWithPivot } from "@spreadsheet/../tests/helpers/pivot";
@@ -1111,6 +1111,7 @@ test("PIVOT formulas with monetary measure are correctly formatted at evaluation
                     <field name="pognon" type="measure"/>
                 </pivot>`,
     });
+    await animationFrame();
     expect(getEvaluatedCell(model, "B3").format).toBe("#,##0.00[$€]");
 });
 
@@ -2322,4 +2323,57 @@ test("date are between two years are correctly grouped by weeks and days", async
             B4: "Foo",          C4: "Foo",          D4: "Foo",         E4: "Foo",
             B5: "11",           C5: "12",           D5: "13",          E5: "14",
         })
+});
+
+test("Pivot headers day of week are still correct after updating the locale's week start day", async function () {
+    const { model } = await createSpreadsheetWithPivot({
+        arch: /* xml */ `
+            <pivot>
+                <field name="date" interval="day_of_week" type="row"/>
+                <field name="probability" type="measure"/>
+            </pivot>`,
+    });
+    patchWithCleanup(localization, { weekStart: 1 /* Monday */ });
+    model.dispatch("UPDATE_LOCALE", {
+        locale: { ...model.getters.getLocale(), weekStart: 1 /* Monday */ },
+    });
+    await waitForDataLoaded(model);
+
+    setCellContent(model, "A20", "=PIVOT(1)");
+    expect(getEvaluatedGrid(model, "A22:A24")).toEqual([["Sunday"], ["Wednesday"], ["Thursday"]]);
+
+    model.dispatch("UPDATE_LOCALE", {
+        locale: { ...model.getters.getLocale(), weekStart: 7 /* Sunday */ },
+    });
+    await waitForDataLoaded(model);
+    expect(getEvaluatedGrid(model, "A22:A24")).toEqual([["Sunday"], ["Wednesday"], ["Thursday"]]);
+});
+
+test("`getPivotCellFromPosition` should not throw on missing company default currency", async function () {
+    const { model } = await createSpreadsheetWithPivot({
+        mockRPC: async function (route, args) {
+            if (args.method === "get_company_currency_for_spreadsheet") {
+                return false;
+            }
+        },
+        arch: /* xml */ `
+            <pivot>
+                <field name="foo" type="col"/>
+                <field name="bar" type="row"/>
+                <field name="pognon" type="measure"/>
+            </pivot>`,
+    });
+    const sheetId = model.getters.getActiveSheetId();
+    const [pivotId] = model.getters.getPivotIds();
+    updatePivot(model, pivotId, {
+        sortedColumn: {
+            domain: [],
+            order: "desc",
+            measure: "pognon:avg",
+        },
+    });
+    await animationFrame();
+    expect(() => {
+        model.getters.getPivotCellFromPosition({ sheetId, col: 0, row: 0 });
+    }).not.toThrow();
 });

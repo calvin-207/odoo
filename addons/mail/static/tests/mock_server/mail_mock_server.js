@@ -941,7 +941,7 @@ export async function mail_data(request) {
 registerRoute("/discuss/search", search);
 /** @type {RouteCallback} */
 async function search(request) {
-    const { term, limit = 8 } = await parseRequestParams(request);
+    const { term, limit = 10 } = await parseRequestParams(request);
 
     /** @type {import("mock_models").DiscussChannel} */
     const DiscussChannel = this.env["discuss.channel"];
@@ -1337,9 +1337,6 @@ export class StoreMany extends StoreRelation {
         target[key] = (previous_value || []).concat(rel_val);
     }
     _get_id() {
-        if (!this.records || !this.records.length) {
-            return [];
-        }
         const res = [];
 
         if (this.records._name === "mail.message.reaction") {

@@ -19,13 +19,16 @@
 # Ediz Duman <neps1192@gmail.com>, 2023
 # Tugay Hatıl <tugayh@projetgrup.com>, 2023
 # "Dylan Kiss (dyki)" <dyki@odoo.com>, 2025.
+# Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2025.
+# Weblate <noreply-mt-weblate@weblate.org>, 2025.
+# DeepL <noreply-mt-deepl@weblate.org>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-11 14:00+0000\n"
-"PO-Revision-Date: 2025-09-16 02:35+0000\n"
-"Last-Translator: \"Dylan Kiss (dyki)\" <dyki@odoo.com>\n"
+"POT-Creation-Date: 2025-11-07 18:36+0000\n"
+"PO-Revision-Date: 2025-11-12 14:58+0000\n"
+"Last-Translator: DeepL <noreply-mt-deepl@weblate.org>\n"
 "Language-Team: Turkish <https://translate.odoo.com/projects/odoo-19/"
 "purchase_stock/tr/>\n"
 "Language: tr\n"
@@ -44,19 +47,36 @@ msgstr "% Zamanında Teslim"
 #. odoo-python
 #: code:addons/purchase_stock/models/purchase_order.py:0
 msgid "%(otd)s %%"
-msgstr ""
+msgstr "%(otd)s %%"
 
 #. module: purchase_stock
 #. odoo-python
 #: code:addons/purchase_stock/models/stock_move.py:0
+#, fuzzy
 msgid "%(value)s for %(quantity)s %(unit)s from %(bills)s"
+msgstr "%(value)s için %(quantity)s %(unit)s adresinden %(bills)s"
+
+#. module: purchase_stock
+#. odoo-python
+#: code:addons/purchase_stock/models/stock_move.py:0
+#, fuzzy
+msgid "%(value)s for %(quantity)s %(unit)s from %(quotation)s (not billed)"
 msgstr ""
+"%(value)s %(quantity)s %(unit)s için %(quotation)s adresinden "
+"(faturalandırılmamıştır)"
 
 #. module: purchase_stock
 #. odoo-python
 #: code:addons/purchase_stock/models/stock_rule.py:0
 msgid "+ %d day(s)"
 msgstr "+ %d gün(ler)"
+
+#. module: purchase_stock
+#. odoo-python
+#: code:addons/purchase_stock/models/stock_rule.py:0
+#, fuzzy
+msgid "+ %s day(s)"
+msgstr "+ %s gün(ler)"
 
 #. module: purchase_stock
 #: model_terms:ir.ui.view,arch_db:purchase_stock.res_partner_view_purchase_buttons_inherit
@@ -75,33 +95,38 @@ msgstr "<span class=\"o_stat_value\">%</span>"
 
 #. module: purchase_stock
 #: model_terms:ir.ui.view,arch_db:purchase_stock.product_view_kanban_catalog_purchase_only
-msgid "<span class=\"text-info fw-bold fs-5\"> Suggest </span>"
-msgstr ""
+#, fuzzy
+msgid "<span class=\"text-info fw-bold fs-5 me-1\">Suggest</span>"
+msgstr "<span class=\"text-info fw-bold fs-5 me-1\">Önermek</span>"
 
 #. module: purchase_stock
 #: model_terms:ir.ui.view,arch_db:purchase_stock.product_view_kanban_catalog_purchase_only
-msgid "<span class=\"text-info fw-bold fs-5\"> units </span>"
-msgstr ""
+#, fuzzy
+msgid "<span class=\"text-info fw-bold fs-5 me-1\">units</span>"
+msgstr "<span class=\"text-info fw-bold fs-5 me-1\">birimler</span>"
 
 #. module: purchase_stock
 #: model_terms:ir.ui.view,arch_db:purchase_stock.product_view_kanban_catalog_purchase_only
-msgid "<span class=\"text-muted small\"> Forecasted</span>"
-msgstr ""
+#, fuzzy
+msgid "<span class=\"text-muted small me-1\">Monthly Demand:</span>"
+msgstr "<span class=\"text-muted small me-1\">Aylık Talep:</span>"
 
 #. module: purchase_stock
 #: model_terms:ir.ui.view,arch_db:purchase_stock.product_view_kanban_catalog_purchase_only
-msgid "<span class=\"text-muted small\">Monthly Demand: </span>"
-msgstr ""
+#, fuzzy
+msgid "<span class=\"text-muted small ms-1\">Forecasted</span>"
+msgstr "<span class=\"text-muted small ms-1\">Tahmini</span>"
 
 #. module: purchase_stock
 #: model_terms:ir.ui.view,arch_db:purchase_stock.purchase_order_view_form_inherit
+#, fuzzy
 msgid "<span invisible=\"on_time_rate &gt;= 0\">No data yet</span>"
-msgstr ""
+msgstr "<span invisible=\"on_time_rate &gt;= 0\">Henüz veri yok</span>"
 
 #. module: purchase_stock
 #: model_terms:ir.ui.view,arch_db:purchase_stock.product_view_kanban_catalog_purchase_only
 msgid "<span> / </span>"
-msgstr ""
+msgstr "<span> / </span>"
 
 #. module: purchase_stock
 #: model_terms:ir.ui.view,arch_db:purchase_stock.res_config_settings_view_form_stock
@@ -122,8 +147,9 @@ msgstr "<strong>Teslimat Koşulu:</strong>"
 
 #. module: purchase_stock
 #: model_terms:ir.ui.view,arch_db:purchase_stock.report_purchasequotation_document
+#, fuzzy
 msgid "<strong>Requested Ship Date:</strong>"
-msgstr ""
+msgstr "<strong>Talep Edilen Sevkiyat Tarihi:</strong>"
 
 #. module: purchase_stock
 #: model:ir.model.fields,help:purchase_stock.field_purchase_order_line__is_storable
@@ -151,31 +177,30 @@ msgstr "Aksiyon"
 #. module: purchase_stock
 #. odoo-javascript
 #: code:addons/purchase_stock/static/src/product_catalog/search/search_panel.xml:0
-msgid "Activate"
-msgstr ""
-
-#. module: purchase_stock
-#. odoo-javascript
-#: code:addons/purchase_stock/static/src/product_catalog/search/search_panel.xml:0
+#, fuzzy
 msgid "Add All"
-msgstr ""
+msgstr "Tümünü Ekle"
 
 #. module: purchase_stock
 #: model_terms:ir.ui.view,arch_db:purchase_stock.res_config_settings_view_form_purchase
+#, fuzzy
 msgid ""
 "Allow Make to Order, or automate PO, when a product is sold and get direct "
 "links between documents."
 msgstr ""
+"Bir ürün satıldığında Make to Order'a izin verin veya PO'yu otomatikleştirin "
+"ve belgeler arasında doğrudan bağlantılar alın."
 
 #. module: purchase_stock
 #: model:ir.model.fields.selection,name:purchase_stock.selection__res_partner__group_rfq__all
 msgid "Always"
-msgstr ""
+msgstr "Daima"
 
 #. module: purchase_stock
 #: model:ir.model.fields,help:purchase_stock.field_stock_warehouse_orderpoint__available_vendor
+#, fuzzy
 msgid "Any vendor on the product's pricelist"
-msgstr ""
+msgstr "Ürünün fiyat listesindeki herhangi bir satıcı"
 
 #. module: purchase_stock
 #: model:ir.model.fields,field_description:purchase_stock.field_purchase_order__effective_date
@@ -184,14 +209,15 @@ msgstr "Varış"
 
 #. module: purchase_stock
 #: model:ir.model.fields,field_description:purchase_stock.field_stock_warehouse_orderpoint__available_vendor
+#, fuzzy
 msgid "Available Vendor"
-msgstr ""
+msgstr "Mevcut Satıcı"
 
 #. module: purchase_stock
 #. odoo-javascript
 #: code:addons/purchase_stock/static/src/product_catalog/search/search_panel.xml:0
 msgid "Based on"
-msgstr ""
+msgstr "Buna göre"
 
 #. module: purchase_stock
 #. odoo-python
@@ -240,8 +266,9 @@ msgstr "Karşılık gelen makbuz bulunmuş değil."
 
 #. module: purchase_stock
 #: model:ir.model,website_form_label:purchase_stock.model_res_partner
+#, fuzzy
 msgid "Create a Customer"
-msgstr ""
+msgstr "Müşteri Oluşturma"
 
 #. module: purchase_stock
 #: model:ir.model.fields,field_description:purchase_stock.field_stock_move__created_purchase_line_ids
@@ -256,7 +283,7 @@ msgstr "Özel Açıklama"
 #. module: purchase_stock
 #: model:ir.model.fields.selection,name:purchase_stock.selection__res_partner__group_rfq__day
 msgid "Daily"
-msgstr ""
+msgstr "Günlük"
 
 #. module: purchase_stock
 #: model:ir.model.fields,field_description:purchase_stock.field_stock_picking__days_to_arrive
@@ -287,6 +314,7 @@ msgstr "Satınalma Günler"
 #. module: purchase_stock
 #: model:ir.model.fields,help:purchase_stock.field_res_partner__group_rfq
 #: model:ir.model.fields,help:purchase_stock.field_res_users__group_rfq
+#, fuzzy
 msgid ""
 "Define if RFQ should be grouped         together based on expected arrival.\n"
 "         On Order: Replenishment needs will be grouped together except for "
@@ -297,6 +325,15 @@ msgid ""
 "is the same week or week day\n"
 "         Always: Replenishment needs will always be grouped."
 msgstr ""
+"RFQ'nun beklenen varışa göre birlikte gruplandırılıp gruplandırılmayacağını "
+"tanımlayın.\n"
+"         Sipariş Üzerine: MTO hariç ikmal ihtiyaçları birlikte "
+"gruplandırılacaktır.\n"
+"         Günlük: Beklenen varış aynı gün ise ikmal ihtiyaçları "
+"gruplandırılacaktır.\n"
+"         Haftalık: Beklenen varış aynı hafta veya hafta günü ise ikmal "
+"ihtiyaçları gruplandırılacaktır\n"
+"         Her zaman: Yenileme ihtiyaçları her zaman gruplandırılacaktır."
 
 #. module: purchase_stock
 #: model:ir.model.fields,field_description:purchase_stock.field_stock_picking__delay_pass
@@ -310,8 +347,9 @@ msgstr "Teslim Alacak"
 
 #. module: purchase_stock
 #: model_terms:ir.ui.view,arch_db:purchase_stock.product_supplierinfo_replenishment_tree_view
+#, fuzzy
 msgid "Delivery Time"
-msgstr ""
+msgstr "Teslimat Süresi"
 
 #. module: purchase_stock
 #: model:ir.model.fields,field_description:purchase_stock.field_purchase_order__default_location_dest_id_usage
@@ -342,6 +380,7 @@ msgstr "Hedef Konum Türü"
 #: model:ir.model.fields,field_description:purchase_stock.field_stock_replenishment_info__display_name
 #: model:ir.model.fields,field_description:purchase_stock.field_stock_replenishment_option__display_name
 #: model:ir.model.fields,field_description:purchase_stock.field_stock_return_picking__display_name
+#: model:ir.model.fields,field_description:purchase_stock.field_stock_route__display_name
 #: model:ir.model.fields,field_description:purchase_stock.field_stock_rule__display_name
 #: model:ir.model.fields,field_description:purchase_stock.field_stock_warehouse__display_name
 #: model:ir.model.fields,field_description:purchase_stock.field_stock_warehouse_orderpoint__display_name
@@ -382,15 +421,19 @@ msgstr "Teslimata Kalan Etkin Gün Sayısı"
 
 #. module: purchase_stock
 #: model:ir.model.fields,field_description:purchase_stock.field_stock_warehouse_orderpoint__effective_vendor_id
+#, fuzzy
 msgid "Effective Vendor"
-msgstr ""
+msgstr "Etkin Satıcı"
 
 #. module: purchase_stock
 #: model:ir.model.fields,help:purchase_stock.field_stock_warehouse_orderpoint__effective_vendor_id
+#, fuzzy
 msgid ""
 "Either the vendor set directly or the one computed to be used by this "
 "replenishment"
 msgstr ""
+"Ya doğrudan ayarlanan satıcı ya da bu ikmal tarafından kullanılmak üzere "
+"hesaplanan satıcı"
 
 #. module: purchase_stock
 #: model_terms:ir.ui.view,arch_db:purchase_stock.exception_on_po
@@ -405,7 +448,7 @@ msgstr "İstisna(lar):"
 #. module: purchase_stock
 #: model:ir.model.fields.selection,name:purchase_stock.selection__res_partner__group_on__default
 msgid "Expected Date"
-msgstr ""
+msgstr "Beklenen Tarih"
 
 #. module: purchase_stock
 #: model_terms:ir.ui.view,arch_db:purchase_stock.purchase_order_view_form_inherit
@@ -420,13 +463,7 @@ msgstr "Öngörülen Sayı"
 #. module: purchase_stock
 #: model:ir.model.fields.selection,name:purchase_stock.selection__res_partner__group_on__5
 msgid "Friday"
-msgstr ""
-
-#. module: purchase_stock
-#. odoo-python
-#: code:addons/purchase_stock/models/stock_move.py:0
-msgid "From %(quotation)s"
-msgstr ""
+msgstr "Cuma"
 
 #. module: purchase_stock
 #: model:ir.model.fields.selection,name:purchase_stock.selection__purchase_order__receipt_status__full
@@ -442,6 +479,7 @@ msgstr "Tedarikçi taslak faturası oluşturun."
 #. module: purchase_stock
 #. odoo-javascript
 #: code:addons/purchase_stock/static/src/product_catalog/search/search_panel.js:0
+#, fuzzy
 msgid ""
 "Get recommendations of products to purchase at %(vendorName)s based on stock "
 "on hand, incoming quantities, and expected sales volumes.\n"
@@ -449,6 +487,11 @@ msgid ""
 " Set a reference period to estimate sales, and use the percentage to take "
 "into account seasonality and the increase/decrease of business."
 msgstr ""
+"Eldeki stoklara, gelen miktarlara ve beklenen satış hacimlerine göre "
+"%(vendorName)s adresinden satın alınacak ürünlerle ilgili öneriler alın.\n"
+"\n"
+" Satışları tahmin etmek için bir referans dönemi belirleyin ve mevsimselliği "
+"ve iş artışını/azalışını hesaba katmak için yüzdeyi kullanın."
 
 #. module: purchase_stock
 #. odoo-javascript
@@ -459,14 +502,16 @@ msgstr "Tedarikçi faturasını oluşturmak için satınalma siparişine geri d�
 #. module: purchase_stock
 #. odoo-javascript
 #: code:addons/purchase_stock/static/src/stock_valuation/stock_valuation_report.js:0
+#, fuzzy
 msgid "Goods Received Not Invoiced"
-msgstr ""
+msgstr "Faturalanmamış Mallar"
 
 #. module: purchase_stock
 #: model:ir.model.fields,field_description:purchase_stock.field_res_partner__group_rfq
 #: model:ir.model.fields,field_description:purchase_stock.field_res_users__group_rfq
+#, fuzzy
 msgid "Group RFQ"
-msgstr ""
+msgstr "Grup Teklif Talebi"
 
 #. module: purchase_stock
 #: model:ir.model.fields,field_description:purchase_stock.field_account_move__id
@@ -492,6 +537,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:purchase_stock.field_stock_replenishment_info__id
 #: model:ir.model.fields,field_description:purchase_stock.field_stock_replenishment_option__id
 #: model:ir.model.fields,field_description:purchase_stock.field_stock_return_picking__id
+#: model:ir.model.fields,field_description:purchase_stock.field_stock_route__id
 #: model:ir.model.fields,field_description:purchase_stock.field_stock_rule__id
 #: model:ir.model.fields,field_description:purchase_stock.field_stock_warehouse__id
 #: model:ir.model.fields,field_description:purchase_stock.field_stock_warehouse_orderpoint__id
@@ -513,6 +559,11 @@ msgstr "Gelen Sevkiyatlar"
 #: model:ir.model.fields,field_description:purchase_stock.field_purchase_order__incoterm_location
 msgid "Incoterm Location"
 msgstr "Incoterm Konumu"
+
+#. module: purchase_stock
+#: model:ir.model,name:purchase_stock.model_stock_route
+msgid "Inventory Routes"
+msgstr "Stok Envanter Rotaları"
 
 #. module: purchase_stock
 #: model:ir.model.fields,field_description:purchase_stock.field_purchase_order__is_shipped
@@ -567,17 +618,25 @@ msgstr "Minimum Envanter Kuralı"
 #. module: purchase_stock
 #: model:ir.model.fields.selection,name:purchase_stock.selection__res_partner__group_on__1
 msgid "Monday"
-msgstr ""
+msgstr "Pazartesi"
 
 #. module: purchase_stock
 #: model:ir.model.fields,field_description:purchase_stock.field_product_product__monthly_demand
+#, fuzzy
 msgid "Monthly Demand"
-msgstr ""
+msgstr "Aylık Talep"
 
 #. module: purchase_stock
 #: model_terms:ir.ui.view,arch_db:purchase_stock.exception_on_po
 msgid "Next transfer(s) impacted:"
 msgstr "Etkilenen sonraki transfer(ler):"
+
+#. module: purchase_stock
+#. odoo-python
+#: code:addons/purchase_stock/models/stock_rule.py:0
+#, fuzzy
+msgid "No Vendor Found"
+msgstr "Satıcı Bulunamadı"
 
 #. module: purchase_stock
 #: model_terms:ir.ui.view,arch_db:purchase_stock.purchase_help_message_template
@@ -587,8 +646,9 @@ msgstr "Henüz makbuz yok! Satın alma siparişleri ile otomatikleştirin."
 #. module: purchase_stock
 #. odoo-python
 #: code:addons/purchase_stock/models/stock_rule.py:0
+#, fuzzy
 msgid "No supplier has been found to replenish"
-msgstr ""
+msgstr "Yenileme yapacak tedarikçi bulunamadı"
 
 #. module: purchase_stock
 #: model:ir.model.fields.selection,name:purchase_stock.selection__purchase_order__receipt_status__pending
@@ -599,17 +659,18 @@ msgstr "Alınmadı"
 #. odoo-javascript
 #: code:addons/purchase_stock/static/src/purchase_dashboard/purchase_dashboard.xml:0
 msgid "OTD"
-msgstr ""
+msgstr "OTD"
 
 #. module: purchase_stock
 #: model_terms:ir.ui.view,arch_db:purchase_stock.res_partner_view_purchase_buttons_inherit
 msgid "On"
-msgstr ""
+msgstr "Açık"
 
 #. module: purchase_stock
 #: model:ir.model.fields.selection,name:purchase_stock.selection__res_partner__group_rfq__default
+#, fuzzy
 msgid "On Order"
-msgstr ""
+msgstr "Sipariş Üzerine"
 
 #. module: purchase_stock
 #: model_terms:ir.ui.view,arch_db:purchase_stock.vendor_delay_report_view_graph
@@ -644,7 +705,7 @@ msgstr "Zaman Oranı"
 #. odoo-python
 #: code:addons/purchase_stock/models/stock_rule.py:0
 msgid "Order Deadline"
-msgstr ""
+msgstr "Sipariş Zaman Sınırı"
 
 #. module: purchase_stock
 #: model:ir.model.fields,field_description:purchase_stock.field_purchase_order_line__orderpoint_id
@@ -751,7 +812,7 @@ msgstr "Satınalma siparişi sayısı"
 #. module: purchase_stock
 #: model:ir.model.fields,field_description:purchase_stock.field_stock_reference__purchase_ids
 msgid "Purchases"
-msgstr ""
+msgstr "Satınalma"
 
 #. module: purchase_stock
 #: model:ir.model.fields,help:purchase_stock.field_purchase_order__dest_address_id
@@ -770,8 +831,9 @@ msgstr "Alım"
 #. module: purchase_stock
 #. odoo-python
 #: code:addons/purchase_stock/models/stock_rule.py:0
+#, fuzzy
 msgid "Receipt Date"
-msgstr ""
+msgstr "Makbuz Tarihi"
 
 #. module: purchase_stock
 #: model:ir.model.fields,field_description:purchase_stock.field_purchase_order__receipt_status
@@ -781,7 +843,7 @@ msgstr "Alım Durumu"
 #. module: purchase_stock
 #: model_terms:ir.ui.view,arch_db:purchase_stock.purchase_order_view_form_inherit
 msgid "Receive"
-msgstr ""
+msgstr "Ödeme Alma"
 
 #. module: purchase_stock
 #. odoo-javascript
@@ -812,19 +874,21 @@ msgstr ""
 
 #. module: purchase_stock
 #: model:ir.model,name:purchase_stock.model_stock_reference
+#, fuzzy
 msgid "Reference between stock documents"
-msgstr ""
+msgstr "Stok belgeleri arasında referans"
 
 #. module: purchase_stock
 #: model:ir.model.fields,field_description:purchase_stock.field_purchase_order__reference_ids
 msgid "References"
-msgstr ""
+msgstr "Referanslar"
 
 #. module: purchase_stock
 #. odoo-javascript
 #: code:addons/purchase_stock/static/src/product_catalog/search/search_panel.xml:0
+#, fuzzy
 msgid "Replenish for"
-msgstr ""
+msgstr "İçin yenileyin"
 
 #. module: purchase_stock
 #: model_terms:ir.ui.view,arch_db:purchase_stock.res_config_settings_view_form_purchase
@@ -834,8 +898,9 @@ msgstr "Tedarikçiler müşterilerinize sizin adınıza direkt teslimat yaparlar
 #. module: purchase_stock
 #. odoo-javascript
 #: code:addons/purchase_stock/static/src/purchase_stock_forecasted/forecasted_details.xml:0
-msgid "Requests for quotation"
-msgstr "Teklif Talepleri"
+#, fuzzy
+msgid "Requests for quotation :"
+msgstr "Teklif talepleri :"
 
 #. module: purchase_stock
 #: model:ir.model.fields,field_description:purchase_stock.field_purchase_order_line__move_ids
@@ -850,7 +915,7 @@ msgstr "Ters Transfer"
 #. module: purchase_stock
 #: model:ir.model.fields.selection,name:purchase_stock.selection__res_partner__group_on__6
 msgid "Saturday"
-msgstr ""
+msgstr "Cumartesi"
 
 #. module: purchase_stock
 #: model_terms:ir.ui.view,arch_db:purchase_stock.product_supplierinfo_replenishment_tree_view
@@ -870,8 +935,9 @@ msgstr "Tedarikçiyi Göster"
 
 #. module: purchase_stock
 #: model:ir.model.fields,field_description:purchase_stock.field_stock_replenishment_info__show_vendor_tab
+#, fuzzy
 msgid "Show Vendor Tab"
-msgstr ""
+msgstr "Satıcı Sekmesini Göster"
 
 #. module: purchase_stock
 #: model:ir.model.fields,field_description:purchase_stock.field_stock_warehouse_orderpoint__show_supplier
@@ -902,7 +968,7 @@ msgstr "Stok Kuralı"
 #. module: purchase_stock
 #: model:ir.model,name:purchase_stock.model_stock_account_stock_valuation_report
 msgid "Stock Valuation"
-msgstr ""
+msgstr "Stok Değerleme"
 
 #. module: purchase_stock
 #: model:ir.model,name:purchase_stock.model_report_stock_report_stock_rule
@@ -923,45 +989,56 @@ msgstr "Stok deposu ikmal seçeneği"
 #. odoo-javascript
 #: code:addons/purchase_stock/static/src/product_catalog/search/search_panel.xml:0
 msgid "Suggest"
-msgstr ""
+msgstr "Gönder"
 
 #. module: purchase_stock
 #: model:ir.model.fields,field_description:purchase_stock.field_res_partner__suggest_based_on
 #: model:ir.model.fields,field_description:purchase_stock.field_res_users__suggest_based_on
+#, fuzzy
 msgid "Suggest Based On"
-msgstr ""
+msgstr "Şuna Göre Öner"
 
 #. module: purchase_stock
 #: model:ir.model.fields,field_description:purchase_stock.field_res_partner__suggest_days
 #: model:ir.model.fields,field_description:purchase_stock.field_res_users__suggest_days
+#, fuzzy
 msgid "Suggest Days"
-msgstr ""
+msgstr "Gün Öner"
 
 #. module: purchase_stock
 #: model:ir.model.fields,field_description:purchase_stock.field_product_product__suggest_estimated_price
+#, fuzzy
 msgid "Suggest Estimated Price"
-msgstr ""
+msgstr "Tahmini Fiyat Önerin"
 
 #. module: purchase_stock
 #: model:ir.model.fields,field_description:purchase_stock.field_res_partner__suggest_percent
 #: model:ir.model.fields,field_description:purchase_stock.field_res_users__suggest_percent
+#, fuzzy
 msgid "Suggest Percent"
-msgstr ""
+msgstr "Yüzde Öner"
+
+#. module: purchase_stock
+#: model_terms:ir.ui.view,arch_db:purchase_stock.product_view_search_catalog
+msgid "Suggested"
+msgstr "Önderilen"
 
 #. module: purchase_stock
 #: model:ir.model.fields,field_description:purchase_stock.field_product_product__suggested_qty
+#, fuzzy
 msgid "Suggested Qty"
-msgstr ""
+msgstr "Önerilen Miktar"
 
 #. module: purchase_stock
 #: model:ir.model.fields.selection,name:purchase_stock.selection__res_partner__group_on__7
 msgid "Sunday"
-msgstr ""
+msgstr "Pazar"
 
 #. module: purchase_stock
 #: model:ir.model.fields,field_description:purchase_stock.field_stock_warehouse_orderpoint__supplier_id_placeholder
+#, fuzzy
 msgid "Supplier Id Placeholder"
-msgstr ""
+msgstr "Tedarikçi Kimliği Yer Tutucu"
 
 #. module: purchase_stock
 #: model:ir.model,name:purchase_stock.model_product_supplierinfo
@@ -980,14 +1057,6 @@ msgstr "Teslimat Bırakma Adresini görüntülemek için kullanılan teknik alan
 
 #. module: purchase_stock
 #. odoo-python
-#: code:addons/purchase_stock/models/product.py:0
-msgid ""
-"The 'Buy' route cannot be assigned to a product that is not purchasable. "
-"Enable 'Can be Purchased' boolean to use this route."
-msgstr ""
-
-#. module: purchase_stock
-#. odoo-python
 #: code:addons/purchase_stock/models/stock.py:0
 msgid "The following replenishment order has been generated"
 msgstr "Aşağıdaki yenileme siparişi oluşturuldu"
@@ -995,8 +1064,9 @@ msgstr "Aşağıdaki yenileme siparişi oluşturuldu"
 #. module: purchase_stock
 #. odoo-python
 #: code:addons/purchase_stock/models/purchase_order.py:0
+#, fuzzy
 msgid "The purchase order %s this receipt is linked to was cancelled."
-msgstr ""
+msgstr "Bu makbuzun bağlı olduğu satın alma siparişi %s iptal edildi."
 
 #. module: purchase_stock
 #. odoo-python
@@ -1028,12 +1098,13 @@ msgid ""
 "%s (no vendor defined, minimum quantity not reached, dates not valid, ...). "
 "Go on the product form and complete the list of vendors."
 msgstr ""
-"%s ürünü için satınalma siparişi oluşturmak için uygun tedarikçi fiyatı yok ("
-"tedarikçi tanımlanmamış, minimum miktara ulaşılmadı, tarihler geçerli değil, "
-"...). Ürün formuna gidin ve tedarikçi listesini tamamlayın."
+"%s ürünü için satınalma siparişi oluşturmak için uygun tedarikçi fiyatı yok "
+"(tedarikçi tanımlanmamış, minimum miktara ulaşılmadı, tarihler geçerli "
+"değil, ...). Ürün formuna gidin ve tedarikçi listesini tamamlayın."
 
 #. module: purchase_stock
 #: model_terms:ir.ui.view,arch_db:purchase_stock.res_config_settings_view_form_purchase
+#, fuzzy
 msgid ""
 "This adds a Replenish On Order (MTO) route to apply on products in order to "
 "generate on-demand replenishment linked to your sales orders (for example) "
@@ -1041,6 +1112,11 @@ msgid ""
 "manufacturing orders, etc. are triggered based on what way to replenish is "
 "set on the product (Buy or Manufacture route)."
 msgstr ""
+"Bu, doğrudan bir bağlantıyla onaylanır onaylanmaz satış siparişlerinize "
+"(örneğin) bağlı talep üzerine yenileme oluşturmak için ürünlere uygulanacak "
+"bir Sipariş Üzerine Yenileme (MTO) rotası ekler. Satın alma siparişleri, "
+"üretim siparişleri vb. üründe hangi ikmal yolunun ayarlandığına bağlı olarak "
+"tetiklenir (Satın Alma veya Üretim rotası)."
 
 #. module: purchase_stock
 #: model_terms:ir.ui.view,arch_db:purchase_stock.res_config_settings_view_form_purchase
@@ -1056,6 +1132,13 @@ msgstr ""
 "siparişi onaylandıktan sonra teklif için bir satınalma talebi "
 "oluşturacaktır. Bu isteğe bağlı bir akış. Talep edilen teslimat adresi, "
 "deponuz değil müşteri teslimat adresi olacaktır."
+
+#. module: purchase_stock
+#. odoo-python
+#: code:addons/purchase_stock/models/product.py:0
+#, fuzzy
+msgid "This product has the \"Buy\" route checked but is not purchasable."
+msgstr "Bu üründe \"Satın Al\" yolu işaretlenmiştir ancak satın alınamaz."
 
 #. module: purchase_stock
 #: model:ir.model.fields,help:purchase_stock.field_purchase_order__picking_type_id
@@ -1081,18 +1164,19 @@ msgstr "Bu tarihler, %s makbuzunda buna göre güncellenmiştir."
 #. module: purchase_stock
 #: model:ir.model.fields.selection,name:purchase_stock.selection__res_partner__group_on__4
 msgid "Thursday"
-msgstr ""
+msgstr "Perşembe"
 
 #. module: purchase_stock
 #. odoo-javascript
 #: code:addons/purchase_stock/static/src/product_catalog/search/time_period_selection_fields.js:0
+#, fuzzy
 msgid "Time Perdiod Selection"
-msgstr ""
+msgstr "Zaman Periyodu Seçimi"
 
 #. module: purchase_stock
 #: model_terms:ir.ui.view,arch_db:purchase_stock.product_view_search_catalog
 msgid "To Order"
-msgstr ""
+msgstr "Sipariş Ver"
 
 #. module: purchase_stock
 #: model:ir.model.fields,field_description:purchase_stock.field_vendor_delay_report__qty_total
@@ -1112,7 +1196,7 @@ msgstr "Aktarım"
 #. module: purchase_stock
 #: model:ir.model.fields.selection,name:purchase_stock.selection__res_partner__group_on__2
 msgid "Tuesday"
-msgstr ""
+msgstr "Salı"
 
 #. module: purchase_stock
 #. odoo-javascript
@@ -1148,8 +1232,9 @@ msgstr "Tedarikçi Zamanında Teslim Analizi"
 #. module: purchase_stock
 #: model:ir.model.fields,field_description:purchase_stock.field_stock_replenishment_info__supplierinfo_id
 #: model:ir.model.fields,field_description:purchase_stock.field_stock_warehouse_orderpoint__supplier_id
+#, fuzzy
 msgid "Vendor Pricelist"
-msgstr ""
+msgstr "Satıcı Fiyat Listesi"
 
 #. module: purchase_stock
 #: model:ir.model.fields,field_description:purchase_stock.field_stock_warehouse_orderpoint__vendor_ids
@@ -1164,20 +1249,26 @@ msgid "Warehouse"
 msgstr "Depo"
 
 #. module: purchase_stock
+#. odoo-python
+#: code:addons/purchase_stock/models/product.py:0
+msgid "Warning!"
+msgstr "Uyarı!"
+
+#. module: purchase_stock
 #: model:ir.model.fields.selection,name:purchase_stock.selection__res_partner__group_on__3
 msgid "Wednesday"
-msgstr ""
+msgstr "Çarşamba"
 
 #. module: purchase_stock
 #: model:ir.model.fields,field_description:purchase_stock.field_res_partner__group_on
 #: model:ir.model.fields,field_description:purchase_stock.field_res_users__group_on
 msgid "Week Day"
-msgstr ""
+msgstr "Haftanın Günü"
 
 #. module: purchase_stock
 #: model:ir.model.fields.selection,name:purchase_stock.selection__res_partner__group_rfq__week
 msgid "Weekly"
-msgstr ""
+msgstr "Haftalık"
 
 #. module: purchase_stock
 #: model:ir.model.fields,help:purchase_stock.field_stock_warehouse__buy_to_resupply
@@ -1206,7 +1297,7 @@ msgstr "Bu iş ortağı %s için bir tedarikçi konumu belirlemelisiniz"
 #. odoo-javascript
 #: code:addons/purchase_stock/static/src/product_catalog/search/search_panel.xml:0
 msgid "day(s)"
-msgstr ""
+msgstr "gün(ler)"
 
 #. module: purchase_stock
 #: model_terms:ir.ui.view,arch_db:purchase_stock.exception_on_po
@@ -1221,8 +1312,12 @@ msgstr "yerine sipariş edildi"
 #. module: purchase_stock
 #. odoo-python
 #: code:addons/purchase_stock/models/stock_rule.py:0
+#, fuzzy
 msgid "this product should be manually replenished."
-msgstr ""
+msgstr "bu ürün manuel olarak doldurulmalıdır."
+
+#~ msgid "Requests for quotation"
+#~ msgstr "Teklif Talepleri"
 
 #~ msgid ""
 #~ "<span attrs=\"{'invisible': [('on_time_rate', '&gt;=', 0)]}\">No On-time "

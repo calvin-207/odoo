@@ -6245,7 +6245,7 @@ test(`onchange returns an error`, async () => {
 
     await contains(`.o_field_widget[name=int_field] input`).edit("64");
     expect.verifyErrors(["Some business message"]);
-    expect(`.modal`).toHaveCount(1);
+    await waitFor(`.modal`);
     expect(`.modal-body`).toHaveText(/Some business message/);
     expect(`.o_field_widget[name="int_field"] input`).toHaveValue("9");
 
@@ -10439,10 +10439,12 @@ test(`resequence list lines when discardable lines are present`, async () => {
     await contains(`.o_field_x2many_list_row_add a`).click();
     await animationFrame();
     // Drag and drop second line before first one (with 1 draft and invalid line)
-    await contains(`tbody.ui-sortable tr:nth-child(1) .o_handle_cell`).dragAndDrop(
-        `tbody.ui-sortable tr:nth-child(2)`
-    );
-    expect.verifySteps(["onchange"]);
+    // TODO JUM: PRHOOT the events
+    const { drop, moveTo } = await contains(
+        `tbody.ui-sortable tr:nth-child(1) .o_handle_cell`
+    ).drag();
+    await moveTo(`tbody.ui-sortable tr:nth-child(2)`);
+    await drop(document.body);
     expect(`[name="foo"] input`).toHaveValue("1");
 
     // Add a second line

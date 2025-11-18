@@ -138,7 +138,7 @@ const threadPatch = {
                     return;
                 }
                 return this.channel_member_ids.reduce((lastMessageSeenByAllId, member) => {
-                    if (member.persona.notEq(this.store.self) && member.seen_message_id) {
+                    if (member.notEq(this.selfMember) && member.seen_message_id) {
                         return lastMessageSeenByAllId
                             ? Math.min(lastMessageSeenByAllId, member.seen_message_id.id)
                             : member.seen_message_id.id;
@@ -221,6 +221,13 @@ const threadPatch = {
     _computeOfflineMembers() {
         return this.channel_member_ids.filter(
             (member) => !this.store.onlineMemberStatuses.includes(member.im_status)
+        );
+    },
+    /** Equivalent to DiscussChannel._allow_invite_by_email */
+    get allow_invite_by_email() {
+        return (
+            this.channel_type === "group" ||
+            (this.channel_type === "channel" && !this.group_public_id)
         );
     },
     get areAllMembersLoaded() {

@@ -288,10 +288,11 @@ export class ListRenderer extends Component {
                     const column = this.cellToFocus.column;
                     const forward = this.cellToFocus.forward;
                     this.focusCell(column, forward);
-                } else if (this.lastEditedCell) {
-                    this.focusCell(this.lastEditedCell.column, true);
                 } else {
-                    this.focusCell(this.columns[0]);
+                    const column = this.lastEditedCell?.column || this.columns[0];
+                    if (column.widget !== "daterange" || !this.editedRecord.data[column.name]) {
+                        this.focusCell(column);
+                    }
                 }
             }
             this.cellToFocus = null;
@@ -1127,9 +1128,6 @@ export class ListRenderer extends Component {
             colspan = firstAggregateIndex;
         } else {
             colspan = Math.max(1, this.columns.length - DEFAULT_GROUP_PAGER_COLSPAN);
-            if (this.displayOptionalFields) {
-                colspan++;
-            }
         }
         if (this.hasSelectors) {
             colspan++;
@@ -2218,7 +2216,6 @@ export class ListRenderer extends Component {
      * @param {HTMLElement} [params.previous]
      */
     async sortDrop(dataRowId, dataGroupId, { element, previous }) {
-        await this.props.list.leaveEditMode();
         element.classList.remove("o_row_draggable");
         const refId = previous ? previous.dataset.id : null;
         try {
@@ -2237,6 +2234,7 @@ export class ListRenderer extends Component {
             await this.resequencePromise;
         } finally {
             element.classList.add("o_row_draggable");
+            await this.props.list.leaveEditMode();
         }
     }
 
